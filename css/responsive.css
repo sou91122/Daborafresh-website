@@ -1,0 +1,54 @@
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    
+}
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    #menu-area .nav-item::after{display: none;}
+    #menu-area .dropdown-toggle::before {position: absolute;display: block;top: 15px;left: -24px;width: 11px;height: 1px;content: "";border: none;background-color: #000000;}
+    #menu-area .dropdown-toggle::after {position: absolute;display: block;top: 10px;left: -23px;width: 1px;height: 11px;content: "";border: none;background-color: #000000;transition: all 200ms linear;}
+    #menu-area .dropdown-toggle[aria-expanded="true"]::after{transform: rotate(90deg);opacity: 0;}
+    #menu-area .dropdown-menu {padding: 0 !important;background-color: transparent;box-shadow: none;transition: all 200ms linear;}
+    #menu-area .dropdown-toggle[aria-expanded="true"] + .dropdown-menu {margin-top: 10px !important;margin-bottom: 20px !important;}
+    #menu-area .nav-fill .nav-item{text-align: left;padding-left: 1.5rem;}
+    #menu-area .navbar .nav{flex-wrap: nowrap;justify-content: flex-start !important;flex-direction: column;max-height: 350px;overflow:auto;}
+    #menu-area .navbar .nav .d-flex{max-height: 300px;overflow:auto;}
+    .adds-area .adds{margin-bottom: 20px;}
+    #footer-area .footer-bottom .text-right a{display: block;padding: 0 16px;}
+    #footer-area .footer-bottom .copy-right{padding: 0 16px;}
+}
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .container{padding:0 16px;}
+    .container-fluid{padding:0 16px;}
+    .heading h1{font-size: 25px;}
+    #topbar-area .logo-search ul{flex-direction: column;}
+    #topbar-area .logo-search ul li + li{margin-left: 0;}
+    #topbar-area .logo-search ul li a img{margin: 0 0 10px;}
+    #topbar-area .right-part ul .text{display: none;}
+    #topbar-area .right-part ul{justify-content: flex-start;}
+    #topbar-area .right-part ul li{flex: 1;text-align: center;}
+    #topbar-area .logo-search ul li .form-group .form-control{margin-bottom: 7px;}
+    #topbar-area .logo-search ul li a{text-align: center;display: block;}
+    
+}
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+}
